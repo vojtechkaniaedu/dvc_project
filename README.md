@@ -1,5 +1,4 @@
 # Concept of data version control (DVC)
-### Project for Version Control in Git
 
-## Concept basics
+Our project could be found on this site: https://vojtechkaniaedu.github.io/dvc_project/
 
