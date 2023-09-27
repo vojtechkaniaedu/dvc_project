@@ -1,0 +1,21 @@
+digraph auto {
+	graph [bgcolor=transparent]
+	node [fixedsize=true style=filled width=0.95]
+	fee27480a0a2e7842ee7157ebdf7c8c60396b6b6 [label=fee2748 fillcolor="#9ccc66"]
+	"0f76ea982f183ab61eae30c04c04ad9084e057db" [label="0f76ea9" fillcolor="#bc9b8f"]
+	"0f76ea982f183ab61eae30c04c04ad9084e057db" -> fee27480a0a2e7842ee7157ebdf7c8c60396b6b6
+	ee2c2828cd449c0d7cb2092a26913a8a9d775585 [label=ee2c282 fillcolor="#85d5fa"]
+	ee2c2828cd449c0d7cb2092a26913a8a9d775585 -> "0f76ea982f183ab61eae30c04c04ad9084e057db"
+	main [label=main fillcolor="#9999ff"]
+	main -> ee2c2828cd449c0d7cb2092a26913a8a9d775585
+	HEAD [label=HEAD fillcolor="#e6ccff"]
+	HEAD -> main
+	"origin/main" [label=main fillcolor="#ffa366"]
+	"origin/main" -> ee2c2828cd449c0d7cb2092a26913a8a9d775585
+	"origin/vojta" [label=vojta fillcolor="#ffa366"]
+	"origin/vojta" -> ee2c2828cd449c0d7cb2092a26913a8a9d775585
+	origin [label=origin fillcolor="#ff6666"]
+	origin -> "origin/main"
+	origin -> "origin/vojta"
+	"origin/main" -> main
+}
