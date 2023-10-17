@@ -9,11 +9,13 @@
 
         <meta name="description" content="None">
         
+        
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/dracula-ui.css">
         <link rel="stylesheet" href="assets/css/mkdocs.css">
+
         
             <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
         
@@ -54,16 +56,34 @@
                 <li><div class="dot-li drac-bg-red"></div></li>
                 <li><div class="dot-li drac-bg-yellow"></div></li>
             </ul>
-            
         </div>
 
         <hr class="drac-divider" />
 
         <!-- block menu -->
         <ul class="mb-5 drac-list drac-list-none">
-            <li><a href="index.html">What is a DVC?</a></li>
-            <li><a href="page1.html">Subtopic 01</a></li>
-            <li><a href="page2.html">Subtopic 02</a></li>
+            
+            <li class="drac-box">
+                <a href="."
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    DVC (Data Version Control)
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="page1/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page1
+                </a>
+            </li>
+            <li class="drac-box">
+                <a href="page2/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+                    Page2
+                </a>
+            </li>
         </ul>
         <!-- endblock -->
     </div>
@@ -89,6 +109,22 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="page1/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
@@ -119,79 +155,9 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="Main title">DVC (Data Version Control)</h1>
-        <p> It is known as a method used in machine learning and data science projects to manage and version data over time. 
-            It is intended to work in conjunction with typical version control systems, such as Git, to assist and monitor changes in 
-            data files, making it easier to replicate and share experiments and machine learning models in a collaborative/dynamic 
-            environment.</p>
-            <br>
-        <img src="https://editor.analyticsvidhya.com/uploads/26011DVC1.png" alt="DVC source flow">
-        <h2 id="Importance">Why it is important?</h2>       
-        <p> The usage of DVC matters for a number of reasons:</p>
-            <ul style=“list-style-type:square”>
-            <li> Reproducibility and accuracy: Data version control enables data professionals to monitor and regulate modifications 
-                made to datasets over time. This guarantees the accuracy and reproducibility of the data utilized for analysis or 
-                model training. Errors are easy to find and fix since it offers a transparent history of modifications.</li>
-                <br>
-            <li> Collaboration and teamwork: Thanks to data version control, several team members can work concurrently and amicably 
-                on the same dataset. Team members can easily collaborate by monitoring each other's changes, merging adjustments, and 
-                resolving disagreements. This lowers the possibility of data inconsistencies and encourages effective teamwork.</li>
-                <br>
-            <li> Compliance and auditability: Data version control keeps track of any modifications made to datasets. For compliance 
-                purposes, this is essential since it enables organizations to show data lineage and determine who changed what and 
-                when. It supports legal requirements and aids in preserving data integrity.</li>
-                <br>
-            <li>Experimentation and innovation: By making it simple for data scientists to generate and contrast various dataset 
-                versions, data version control promotes experimentation and innovation. They can experiment with various theories, 
-                algorithms, or models using various iterations of the data, recording the outcomes and quickly going back to earlier 
-                iterations when necessary.</li>
-                <br>
-            <li>Data version control reduces the possibility of data loss or corruption through risk management. Organizations can 
-                recover from errors or corrupted data by going back to a known good condition by keeping a history of dataset 
-                versions. In addition to reducing the effect of errors or unforeseen problems, it offers a safety net.</li>
-            </ul>
-        <p> Therefore, summarizing it, data version control helps data practitioners operate more productively and confidently with their data by enhancing data 
-            quality, collaboration, compliance, and risk management.</p>
-        
-        <h2 id="Second definition">Challenges regarding data management in the current era</h2>       
-        <p> Most difficulties nowadays are intended to be solved by the inclusion of DVCs for managing large volumes of data. Otherwise, 
-            it would continue its scalation until the issues become limitans to the process of datamining in order to obtain 
-            business/research insights; some of the most relevant are:</p>
-            <ol type="1">
-                <li>Scalability: Petabyte-scale data management may not be a good fit for relational databases. When handling enormous 
-                    volumes of data, the conventional method of storing data in relational databases becomes unfeasible.</li>
-                    <br>
-                <li>Performance: The structure and performance of a database may be hampered when reading or writing data from it. 
-                    Operations may become slower and more inefficient as a result.</li>
-                    <br>
-                <li>Unstructured Data: The current solutions might not be the best if a company uses a lot of unstructured data. 
-                    To efficiently handle unstructured data, alternative techniques might need to be investigated.</li>
-                    <br>
-                <li>Data Version Control: When working with continuously changing data, maintaining data version control becomes 
-                    essential. Maintaining a trustworthy version of the truth and ensuring consistent data version control can result 
-                    in difficult tasks.</li>
-                    <br>
-                <li>Data and Code Management: The widely used version control system Git is not built to handle massive amounts 
-                    of data. To manage both data and code, though, Git LFS (Large File Storage) can be added as an add-on. Data 
-                    practitioners who work with files larger than conventional code files will find this technique especially 
-                    helpful.</li>
-                    <br>
-                <li>Caching: It is impractical to cache data while handling petabyte-scale operations and a large number of items.</li>
-                </ol>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs -h</code> - Print help message and exit.</li>
-
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre></p>
+        <p><h1 id="dvc-data-version-control">DVC (Data Version Control)</h1>
+<p>It is known as a method used in machine learning and data science projects to manage and version data over time. It is intended to work in conjunction with typical version control systems, such as Git, to assist and monitor changes in data files, making it easier to replicate and share experiments and machine learning models in a collaborative/dynamic environment.</p>
+<p><img alt="DVC source flow" src="https://editor.analyticsvidhya.com/uploads/26011DVC1.png" /></p></p>
     </article>
 </section>
             <!-- endblock -->
