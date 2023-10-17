@@ -1,3 +1,15 @@
-site_name: Data version control
+
+site_name: DVC Wiki
 theme:
   name: dracula
+  features:
+  - navigation.tabs
+  - bavigation.sections
+  - toc.integrate
+  - navigation.top
+  - search.suggest
+  - search.highlight
+  - content.tabs.link
+  - content.code.annotation
+  - content.code.copy
+language: en
