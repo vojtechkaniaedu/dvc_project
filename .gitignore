@@ -161,4 +161,5 @@ cython_debug/
 
 # git graph package
 .gitGraph
+.DS_Store
 **/.DS_Store
