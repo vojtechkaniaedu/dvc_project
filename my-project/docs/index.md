@@ -1,17 +1,5 @@
-# Welcome to Docs
+# DVC (Data Version Control)
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+It is known as a method used in machine learning and data science projects to manage and version data over time. It is intended to work in conjunction with typical version control systems, such as Git, to assist and monitor changes in data files, making it easier to replicate and share experiments and machine learning models in a collaborative/dynamic environment.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+![DVC source flow](https://editor.analyticsvidhya.com/uploads/26011DVC1.png)
