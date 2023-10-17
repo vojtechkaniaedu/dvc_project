@@ -1,4 +1,4 @@
-## Importance
+# Why is it important?
 
 The usage of Data Version Control (DVC) is crucial for several reasons:
 

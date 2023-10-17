@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <title>Data version control</title>
+        <title>Page1 - Data version control</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,12 +12,12 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="/assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../assets/css/mkdocs.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -64,21 +64,21 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="/."
+                <a href=".."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     DVC (Data Version Control)
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/page1/"
-                    class="
+                <a href="./"
+                    class=" active 
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Page1
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/page2/"
+                <a href="../page2/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Page2
@@ -109,12 +109,28 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href=".."
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../page2/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="//search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -137,15 +153,30 @@
             <!-- endblock -->
 
             <!-- block content -->
-    <section class="p-md-5 section-content">
-        <article>
-            <p></p>
-            <h1>404</h1>
-            <hr>
-            <p><strong>Page not found</strong></p>
-        </article>
-    </section>
-
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h2 id="importance">Importance</h2>
+<p>The usage of Data Version Control (DVC) is crucial for several reasons:</p>
+<ul>
+<li>
+<p><strong>Reproducibility and Accuracy:</strong> DVC enables data professionals to monitor and regulate modifications made to datasets over time, ensuring the accuracy and reproducibility of the data used for analysis or model training. Errors are easy to find and fix due to the transparent history of modifications.</p>
+</li>
+<li>
+<p><strong>Collaboration and Teamwork:</strong> DVC allows multiple team members to work concurrently on the same dataset. It facilitates collaboration by tracking changes, merging adjustments, and resolving disagreements. This reduces the possibility of data inconsistencies and promotes effective teamwork.</p>
+</li>
+<li>
+<p><strong>Compliance and Auditability:</strong> DVC keeps track of modifications made to datasets, enabling organizations to demonstrate data lineage, identify who changed what and when, and comply with legal requirements. It supports compliance and preserves data integrity.</p>
+</li>
+<li>
+<p><strong>Experimentation and Innovation:</strong> DVC simplifies the process for data scientists to generate and compare various dataset versions. It encourages experimentation and innovation by allowing scientists to test different theories, algorithms, or models using different iterations of the data. Scientists can record outcomes and revert to earlier iterations when necessary.</p>
+</li>
+<li>
+<p><strong>Risk Management:</strong> DVC reduces the risk of data loss or corruption. Organizations can recover from errors or corrupted data by reverting to a known good state through the history of dataset versions. It acts as a safety net, minimizing the impact of errors or unforeseen problems.</p>
+</li>
+</ul>
+<p>Therefore, data version control helps data practitioners operate more productively and confidently with their data by enhancing data quality, collaboration, compliance, and risk management.</p></p>
+    </article>
+</section>
             <!-- endblock -->
 
             <!-- block footer -->
@@ -162,11 +193,11 @@
 
     </main>
 
-        <script>var base_url = '/';</script>
-        <script src="/assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="/assets/js/bootstrap.bundle.min.js""></script>
-        <script src="/assets/js/mkdocs.js""></script>
-			<script src="/search/main.js" defer></script>
+        <script>var base_url = '..';</script>
+        <script src="../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../assets/js/mkdocs.js""></script>
+			<script src="../search/main.js" defer></script>
 
 </body>
 
