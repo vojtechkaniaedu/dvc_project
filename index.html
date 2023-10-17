@@ -152,11 +152,32 @@
             </ul>
         <p> Therefore, summarizing it, data version control helps data practitioners operate more productively and confidently with their data by enhancing data 
             quality, collaboration, compliance, and risk management.</p>
-        <h2 id="Second definition">Data Version Control as a software</h2>       
-        <p> is a method of working with data sets is data version control. It is similar to version control systems used 
-            in traditional software development, but it has been enhanced for better data processing and collaboration in the context of data 
-            analytics, research, and any other type of data analysis. Specific features and configurations meant to enable work with massive 
-            data sets and data lakes may also be included .</p>
+        
+        <h2 id="Second definition">Challenges regarding data management in the current era</h2>       
+        <p> Most difficulties nowadays are intended to be solved by the inclusion of DVCs for managing large volumes of data. Otherwise, 
+            it would continue its scalation until the issues become limitans to the process of datamining in order to obtain 
+            business/research insights; some of the most relevant are:</p>
+            <ol type="1">
+                <li>Scalability: Petabyte-scale data management may not be a good fit for relational databases. When handling enormous 
+                    volumes of data, the conventional method of storing data in relational databases becomes unfeasible.</li>
+                    <br>
+                <li>Performance: The structure and performance of a database may be hampered when reading or writing data from it. 
+                    Operations may become slower and more inefficient as a result.</li>
+                    <br>
+                <li>Unstructured Data: The current solutions might not be the best if a company uses a lot of unstructured data. 
+                    To efficiently handle unstructured data, alternative techniques might need to be investigated.</li>
+                    <br>
+                <li>Data Version Control: When working with continuously changing data, maintaining data version control becomes 
+                    essential. Maintaining a trustworthy version of the truth and ensuring consistent data version control can result 
+                    in difficult tasks.</li>
+                    <br>
+                <li>Data and Code Management: The widely used version control system Git is not built to handle massive amounts 
+                    of data. To manage both data and code, though, Git LFS (Large File Storage) can be added as an add-on. Data 
+                    practitioners who work with files larger than conventional code files will find this technique especially 
+                    helpful.</li>
+                    <br>
+                <li>Caching: It is impractical to cache data while handling petabyte-scale operations and a large number of items.</li>
+                </ol>
 <h2 id="commands">Commands</h2>
 <ul>
 <li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
